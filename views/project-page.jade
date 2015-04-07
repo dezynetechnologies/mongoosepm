@@ -1,0 +1,6 @@
+extends layout
+block content
+  h1 Mongoose Project Management
+  h2= projectName
+  p Created by: #{createdBy}
+  p Tasks: !{escape(tasks).replace(/\n/g, '<br/>')}

@@ -1,0 +1,7 @@
+extends layout
+block content
+  h1= title
+    form(id="frmUserProject", method="post", action="")
+      label(for="ProjectName") Project name
+      input(type="text", name="ProjectName", id="ProjectName")
+      input(type="submit", value="#{buttonText}")
